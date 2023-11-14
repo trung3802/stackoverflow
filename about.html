@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html>
+    <head><meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Automatic Image Slideshow</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="css/about.css">
+        
+    <script src="js/about.js"></script>
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    </head>
+    <body>
+        <header class="header">
+            <div class="button_list" >
+                <button class="button_list_item" style="cursor:pointer"  id="btn_list"></button>
+            </div>
+            <div class="logo">
+                <a class="logo_inside" href="#"></a>
+            </div>
+            <div class="top_bar">
+                <a class="top_bar_item">About</a>
+                <a class="top_bar_item">Products</a>
+                <a class="top_bar_item">For Teams</a>
+            </div>
+            <div class="search">
+                    <input type="text" class="icon_input" placeholder="Search...">
+                    <div class="icon_search"><i class='bx bx-search-alt-2' ></i></div>
+            
+            <a class="login_button">Login</a>
+            <a class="signup_button">Sign up</a>
+        </header>  
+
+        <nav id="nav" style="display:none">
+            <div class="item_nav">
+                <button href="#" id="home" onClick="reply_click(this.id)"><i class='bx bxs-home-alt-2' ></i>Home</button>
+                <button href="#" id="question" onClick="reply_click(this.id)"><i class='bx bx-question-mark'></i>Question</button>
+                <button href="#" id="tag" onClick="reply_click(this.id)"><i class='bx bxs-purchase-tag-alt'></i>Tag</button>
+            </div>
+
+            <div class="item_nav">
+                <button href="#" id="user" onClick="reply_click(this.id)"><i class='bx bxs-user'></i> Users</button>
+                <button href="#" id="companies" onClick="reply_click(this.id)"><i class='bx bx-briefcase'></i>Companies</button>
+            </div>
+
+            <div class="item_nav">
+                <button href="#" id="collective1" onClick="reply_click(this.id)"><b>Collective</b></button>
+                <button href="#" id="collective2" onClick="reply_click(this.id)"><img src="images/star.png" height="10px" style="margin:3px">Explore clollective</button>
+                
+            </div>
+
+            <div class="item_nav">
+                <button href="#" id="lab" onClick="reply_click(this.id)"><b>Labs</b></button>
+                <button href="#" id="diss" onClick="reply_click(this.id)"><i class='bx bxs-chat'></i>Disscusion</button>
+            </div>
+
+            <div class="item_nav">
+                <b>Teams</b><br>
+                <p>Stack Overflow for Teams – Start collaborating and sharing organizational knowledge.</p>
+                <img src="images/nav_img.png" width="100px"><br>
+                <br>
+                <form action="">
+                    <input type="submit" value="Create a free team" style="width:180px;background-color: orange;padding:10px;border-radius: 5px;align:center;margin-left:20px"><br>
+                    <br><br>
+                    <a href="#">Why teams?</a>
+                </form>
+            </div>
+        </nav> 
+        <div class="container-b">
+            <div class="p-trai">
+                <img src="images/anh/story.png">
+            </div>
+            <div class="p-phai">
+                <a style="font-size: 25px;color: rgb(201, 208, 208);"> Who we are</a>
+                <h1 style="font-size: 45px;"> Empowering the world to develop technology through collective knowledge. </h1>
+                <p style="font-size: 30px;color: rgb(176, 180, 180);">Our public platform serves millions of people every month, making it one of the most popular websites in the world.</p>
+                <p style="font-size: 30px;color: rgb(176, 180, 180);">Our asynchronous knowledge management and collaboration offering, Stack Overflow for Teams, is transforming how people work.</p>
+            </div>
+        </div>
+        <div class="c-titk">
+            <div>
+                <h1>15 years</h1>
+                <p>of accurate, high quality and trusted knowledge</p>
+            </div>
+            <div>
+                <h1>58 million</h1>
+                <p>questions and answers to-date</p>
+            </div>
+            <div>
+                <h1>51 billion</h1>
+                <p>number of times our knowledge has been reused </p>
+            </div>
+            <div>
+                <h1>14 seconds</h1>
+                <p>average time a new question is asked</p>
+            </div>
+        </div>
+        <div>
+            <div class="t-tf"> 
+                <div>
+                    <p>Stack Overflow helps people find the answers they need, when they need them. We're best known for our public Q&A platform that millions of people visit every month to ask questions, learn, and share technical knowledge.</p>
+                </div>
+                <div>
+                    <p>Our products and tools empower people to find what they need to develop technology at work or at home. These products include, Stack Overflow for Teams, Stack Overflow Advertising, Collectives™ on Stack Overflow, and Stack Overflow Talent.</p>
+                </div>
+            </div>
+            <img style="margin: 0px auto;display: flex;" src="images/anh/8.png">
+        </div>
+        <div class="container-tk">
+            <div class="t-tf1">
+                <div class="text-content">
+                    <h3>FOR TEAMS</h3>
+                    <p>Where developers and technologists share private knowledge with coworkers.</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="image-content">
+                    <img src="images/anh/9.png" width="100px">
+                </div>
+            </div>
+            <div class="t-tf1">
+                <div class="text-content">
+                    <h3>COLLECTIVIES</h3>
+                    <p>Where developers and technologists share private knowledge with coworkers.</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="image-content">
+                    <img src="images/anh/9.png" width="100px">
+                </div>
+            </div>
+        </div>
+        <div class="container-tk">
+            <div class="t-tf1">
+                <div class="text-content">
+                    <h3>TALENT</h3>
+                    <p>Where developers and technologists share private knowledge with coworkers.</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="image-content">
+                    <img src="images/anh/9.png" width="100px">
+                </div>
+            </div>
+            <div class="t-tf1">
+                <div class="text-content">
+                    <h3>ADVERTISING</h3>
+                    <p>Where developers and technologists share private knowledge with coworkers.</p>
+                    <button>Learn more</button>
+                </div>
+                <div class="image-content">
+                    <img src="images/anh/9.png" width="100px">
+                </div>
+            </div>
+        </div>
+        <div>
+            <div class="slideshow-container">
+                <div class="mySlides fade">
+                    <div class="numbertext">1 / 3</div>
+                    <img src="images/slide/1.PNG" style="width:100% ;height: 150px;">
+                    <div class="text">Caption Text</div>
+                </div>
+
+                <div class="mySlides fade" style="
+                display: none;">
+                    <div class="numbertext">2 / 3</div>
+                    <img src="images/slide/2.PNG" style="width:100% ;height: 150px;">
+                    <div class="text">Caption Two</div>
+                </div>
+
+                <div class="mySlides fade" style="
+                display: none;">
+                    <div class="numbertext">3 / 3</div>
+                    <img src="images/slide/3.PNG" style="width:100% ;height: 150px;">
+                    <div class="text">Caption Three</div>
+                </div>
+                <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            </div>
+            <br>
+            <div style="text-align:center">
+                <span class="dot" onclick="currentSlide(1)"></span>
+                <span class="dot" onclick="currentSlide(2)"></span>
+                <span class="dot" onclick="currentSlide(3)"></span>
+            </div>
+        </div>
+        <!-- HTML -->
+    <div class="card-container">
+    <div class="card">
+        <div class="icon">
+            <img src="images/icon/4.png" alt="Icon">
+        </div>
+        <div class="content">
+            <h1>Adopt a customer-first mindset</h1>
+            <p>Authentically serve our customers by empowering, listening, and collaborating with our fellow Stackers.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <img src="images/icon/5.png" alt="Icon">
+        </div>
+        <div class="content">
+            <h1>Adopt a customer-first mindset</h1>
+            <p>Authentically serve our customers by empowering, listening, and collaborating with our fellow Stackers.</p>
+        </div>
+    </div>
+    <div class="card">
+        <div class="icon">
+            <img src="images/icon/6.png" alt="Icon">
+        </div>
+        <div class="content">
+            <h1>Adopt a customer-first mindset</h1>
+            <p>Authentically serve our customers by empowering, listening, and collaborating with our fellow Stackers.</p>
+        </div>
+    </div>
+    </div>
+    <div class="card-container">
+        <div class="card">
+            <div class="icon">
+                <img src="images/icon/1.png" alt="Icon">
+            </div>
+            <div class="content">
+                <h1>Adopt a customer-first mindset</h1>
+                <p>Authentically serve our customers by empowering, listening, and collaborating with our fellow Stackers.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="images/icon/2.png" alt="Icon">
+            </div>
+            <div class="content">
+                <h1>Adopt a customer-first mindset</h1>
+                <p>Authentically serve our customers by empowering, listening, and collaborating with our fellow Stackers.</p>
+            </div>
+        </div>
+        <div class="card">
+            <div class="icon">
+                <img src="images/icon/3.png" alt="Icon">
+            </div>
+            <div class="content">
+                <h1>Adopt a customer-first mindset</h1>
+                <p>Authentically serve our customers by empowering, listening, and collaborating with our fellow Stackers.</p>
+            </div>
+        </div>
+    </div>
+    <div class="work-container">
+        <h1>Where we work</h1>
+        <p>We’re proud to be a remote-first company working across many time zones.</p>
+        <div class="buttons">
+            <button>Current job openings</button>
+            <button>Contact us</button>
+        </div>
+    </div>
+
+        
+        <footer>
+            <table style="color:white">
+                <tr>
+                    <th style="width:100px"></th>
+                    <th style="width:200px">Stack overFlow</th>
+                    <th style="width:200px">PRODUCTS</th>
+                    <th style="width:200px">COMPANY</th>
+                    <th style="width:300px">STACK EXCHANGE NETWORK</th>
+                    <th style="font-weight: lighter;">
+                        <a href="#">Blog</a>
+                        <a href="#">Facebook</a>
+                        <a href="#">Twitter</a>
+                        <a href="#"> LinkedLn</a>
+                        <a href="#">Intalgram</a>
+                    </th>
+                 </tr>
+                 <tr style="color:white">
+                    <td></td>
+                    <td>Questions</td>
+                    <td>Teams</td>
+                    <td>About</td>
+                    <td>Technologiy</td>
+                    <td></td>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td>Helps</td>
+                    <td>Advertising</td>
+                    <td>Press</td>
+                    <td>Cultures& reactions</td>
+                    <td></td>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Collectives</td>
+                    <td>Works here</td>
+                    <td>Life & art</td>
+                    <td></td>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td>Talent</td>
+                    <td>Legal</td>
+                    <td>Scient</td>
+                    <td></td>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Privacy Policy</td>
+                    <td>Professionnal</td>
+                    <td></td>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Term of service</td>
+                    <td>Business</td>
+                    <td></td>
+                 </tr>
+                 <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                    <td>Contact us</td>
+                    <td></td>
+                    <td></td>
+                 </tr>
+            </table>
+        </footer>
+        <script>
+            var show_nav=0,last_button="home";
+            document.getElementById('btn_list').addEventListener('click', button_list_pressed); 
+            function button_list_pressed() { 
+                if(show_nav==0){
+                    show_nav=1;
+                    document.getElementById('nav').style.display="block";
+                    
+                    document.getElementById('btn_list').className="nav_transform1";
+                }else{
+                    show_nav=0;
+                    document.getElementById('nav').style.display="none";
+                    document.getElementById('btn_list').className='button_list_item';
+                   
+                }
+              } 
+            function reply_click(id) {
+               
+                document.getElementById(last_button).style.backgroundColor="white";
+                document.getElementById(id).style.backgroundColor="gray";
+                last_button=id
+            };
+            
+        </script>
+</html>

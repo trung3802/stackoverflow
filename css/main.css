@@ -1,0 +1,556 @@
+* {
+    box-sizing: border-box
+}
+
+
+/* Slideshow container */
+
+.slideshow-container {
+    max-width: 1000px;
+    position: relative;
+    margin: auto;
+}
+
+
+/* Next & previous buttons */
+
+
+/* Hide the images by default */
+
+
+/* .mySlides {
+    display: none;
+} */
+
+.prev,
+.next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: rgb(246, 16, 16);
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+
+/* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+
+/* Caption text */
+
+.text {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+}
+
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+    color: #f2f2f2;
+    font-size: 12px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+}
+
+
+/* The dots/bullets/indicators */
+
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+    background-color: #717171;
+}
+
+
+/* Fading animation */
+
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+
+@keyframes fade {
+    from {
+        opacity: .4
+    }
+    to {
+        opacity: 1
+    }
+}
+
+
+/* 
+trái phải */
+
+
+/* Áp dụng reset để loại bỏ margin và padding mặc định */
+
+
+/* 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} */
+
+
+/* Container chứa cả hai div left và right */
+
+.traiphai {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Style cho div left */
+
+.img-left {
+    max-width: 500px;
+    /* Để div có thể mở rộng để đạt đến chiều rộng yêu cầu */
+    text-align: center;
+    background: linear-gradient(to right, #ffcc00, #ff6600, #ff0000);
+    /* Thêm màu nền để dễ nhìn thấy */
+    border: 1px solid #ccc;
+    /* Thêm đường viền để dễ nhìn thấy */
+    padding: 10px;
+    /* Thêm padding cho đẹp */
+    margin: 10px;
+    border-radius: 15px;
+}
+
+
+/* Style cho div right */
+
+.img-right {
+    max-width: 500px;
+    flex: 1;
+    /* Để div có thể mở rộng để đạt đến chiều rộng yêu cầu */
+    text-align: center;
+    background: linear-gradient(to right, #d1ccbc, #0091ff, #0022ff);
+    /* Thêm màu nền để dễ nhìn thấy */
+    border: 1px solid #ccc;
+    /* Thêm đường viền để dễ nhìn thấy */
+    padding: 10px;
+    /* Thêm padding cho đẹp */
+    margin: 10px;
+    border-radius: 15px;
+}
+
+
+/* Style phần trên của cột trái và phải */
+
+.img-left-tren,
+.img-left-duoi {
+    text-align: center;
+}
+
+
+/* Style hình ảnh trong phần trên của cả hai cột */
+
+.img-left-tren img,
+.img-left-duoi img {
+    max-width: 100%;
+    /* Đảm bảo hình ảnh không vượt quá phần tử chứa nó */
+    border-radius: 50%;
+    /* Làm hình ảnh tròn */
+}
+
+
+/* Style phần dưới của cả hai cột */
+
+.img-left-duoi {
+    margin-top: 10px;
+    /* Thêm khoảng cách giữa phần trên và phần dưới */
+}
+
+
+/* Style tiêu đề trong phần dưới của cả hai cột */
+
+.img-left-duoi h2,
+.img-left-duoi p {
+    /* margin-bottom: 10px; */
+    margin: 10px 0px 10px 0px;
+    /* Thêm khoảng cách giữa các phần tử */
+}
+
+
+/* Style nút trong phần dưới của cả hai cột */
+
+.img-left-duoi button {
+    background-color: #0077cc;
+    /* Đặt màu nền */
+    color: #fff;
+    /* Đặt màu văn bản */
+    padding: 10px 20px;
+    /* Thêm padding */
+    font-size: 18px;
+    /* Đặt kích thước font chữ */
+    border: none;
+    /* Loại bỏ đường viền */
+    cursor: pointer;
+    /* Thêm hình con trỏ */
+    border-radius: 10px;
+}
+
+
+/* Thêm hiệu ứng hover cho nút */
+
+.img-left-duoi button:hover {
+    background-color: #00588c;
+    /* Thay đổi màu nền khi hover */
+}
+
+.img-left-duoi a:hover {
+    color: rgb(228, 14, 14);
+    /* Thay đổi màu nền khi hover */
+}
+
+
+/* trẻnuoi */
+
+.cus-bentraiphai,
+.cus-bentraiphai img {
+    border: 1px solid #d7cece;
+}
+
+.cus-bengiua {
+    text-align: center;
+    background-color: #0c0d0e;
+}
+
+.cus-bengiua img {
+    width: 30%;
+    border-radius: 20%;
+    /* Điều chỉnh kích thước và hiệu ứng bo tròn nếu cần */
+}
+
+.tex-trenduoi {
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    background-color: #0c0d0e;
+    padding: 30px 100px 50px 100px;
+}
+
+.tex-trenduoi-a i {
+    font-size: 34px;
+    /* Điều chỉnh kích thước của biểu tượng */
+    margin-bottom: 10px;
+    /* Tạo khoảng cách giữa biểu tượng và tiêu đề */
+    color: #4CAF50;
+    /* Màu sắc của biểu tượng checkbox */
+}
+
+.tex-trenduoi-a {
+    margin-right: 20px;
+    padding: 15px;
+    /* Tạo khoảng cách giữa các khung */
+    border: 1px solid #ccc;
+    /* Tạo đường viền cho khung */
+    border-radius: 8px;
+    /* Bo tròn góc của khung */
+    /* Căn giữa theo chiều dọc */
+    text-align: center;
+}
+
+.cus-bentraiphai,
+.tex-trenduoi {
+    display: flex;
+    justify-content: center;
+}
+
+
+/* Top section */
+
+.b-tren {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.b-tren .b-trai,
+.b-tren .b-phai {
+    padding: 20px;
+    border: 1px solid #ccc;
+    max-width: 400px;
+    margin: 0px auto;
+    border-radius: 15px;
+}
+
+.b-tren .b-trai,
+.b-tren .b-phai {
+    margin-top: 15px;
+}
+
+
+/* Bottom section */
+
+.b-duoi {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.b-duoi div {
+    text-align: center;
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    margin: 10px;
+}
+
+.i-custum {
+    background-color: #f0f0f0;
+    /* Màu nền của khung */
+    padding: 20px;
+    /* Khoảng cách bên trong khung */
+    text-align: center;
+    /* Căn giữa nội dung theo chiều ngang */
+}
+
+.i-custum-tren {
+    display: flex;
+    justify-content: space-around;
+    /* Các phần tử con căn giữa và có khoảng cách đều nhau */
+    margin-top: 20px;
+    /* Khoảng cách giữa các dòng */
+}
+
+.i-custum-tren-a {
+    border: 1px solid #dcbda7;
+    border-radius: 10px;
+}
+
+.i-custum-tren-a1 {
+    border: 1px solid #cecece;
+    border-radius: 10px;
+    font-size: 25px;
+    /* background: linear-gradient(to right, #e5d38a, #96ee60, #e45555); */
+}
+
+.i-custum-tren div {
+    flex: 1;
+    /* Mỗi phần tử con chiếm đều không gian trên cùng một dòng */
+    margin: 5px 10px;
+    /* Khoảng cách giữa các phần tử con */
+    padding: 10px;
+}
+
+.i-custum-tren i {
+    font-size: 24px;
+    /* Kích thước của biểu tượng */
+    color: #4CAF50;
+    /* Màu xanh lá cây cho biểu tượng */
+}
+
+.i-custum-tren h3 {
+    color: #858080;
+    /* Màu đen cho văn bản */
+    
+}
+/* CSS */
+/* CSS */
+.testimonial-container {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.testimonial-container > div {
+    width: 23%; /* Adjust the width as needed */
+}
+
+.testimonial-content {
+    text-align: left;
+}
+
+.testimonial-content img {
+    width: 100px; /* Adjust the width as needed */
+    border-radius: 50%; /* Make the image round */
+}
+
+.testimonial-content p {
+    margin-top: 10px;
+    color: #555;
+}
+
+.testimonial-author {
+    text-align: right;
+}
+
+.testimonial-author h2 {
+    color: #333;
+}
+
+.testimonial-author p {
+    color: #666;
+}
+
+
+/* CSS */
+
+/* Container styles */
+.custom-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Logo styles */
+.custom-logo-image {
+   
+    height: 100px;
+    border-radius: 50%;
+}
+
+/* Heading styles */
+.custom-heading h3 {
+    color: #333;
+    font-size: 30px;
+    max-width: 550px;
+}
+
+/* Additional products styles */
+.custom-products {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.custom-product {
+    width: 30%;
+    border: 1px solid #d0cbcb;
+    border-radius: 10px;
+}
+
+.custom-product-image {
+    width: 50%;
+    border-radius: 10px;
+}
+
+.custom-product p {
+    margin-top: 10px;
+    color: #555;
+}
+
+/* Button and job openings styles */
+.custom-footer {
+    margin-top: 20px;
+}
+
+.custom-about-button {
+    padding: 10px;
+    background-color: orange;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+
+.custom-footer p {
+    color: #555;
+}
+
+.custom-job-openings {
+    color: #3498db;
+    cursor: pointer;
+}
+.icon-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 150px;
+    padding: 90px; 
+}
+
+.icon-container div {
+    text-align: center;
+    border: 1px solid #d0cbcb;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #c9c3c3;
+    height: 100px;
+}
+
+.icon-container i {
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.icon-container p {
+    margin: 0;
+    font-size: 20px;
+}
+.reveal-item {
+    text-align: center;
+    margin: 0 10px;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 4.5s;
+}
+
+.reveal {
+    opacity: 1;
+    transform: translateY(0);
+}
+.icon-container {
+    display: flex;
+    align-items: center;
+}
+
+.icon-container i {
+    margin-right: 10px; 
+}
+
+#scrollToTopBtn {
+    /* display: none; */
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: opacity 0.2s;
+}

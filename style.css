@@ -1,0 +1,183 @@
+a {
+    text-decoration: none;
+    color: black
+}
+
+.header {
+    /* position: fixed; */
+    border-top: solid 2px red;
+    border-bottom: 0.3px solid gray;
+    height: 60px;
+    width: 100%;
+    padding: 5px 100px;
+    display: flex;
+}
+
+.button_list {
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button_list_item {
+    width: 30px;
+    border: none;
+    background-image: url(images/listicon.jpg);
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    padding: 10px;
+}
+
+.button_list:hover {
+    background-color: rgb(231, 230, 230);
+    cursor: pointer;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo_inside {
+    width: 30px;
+    border: none;
+    background-image: url(images/logo.jpg);
+    width: 100px;
+    height: 40px;
+    background-size: 100% 100%;
+    padding: 10px;
+}
+
+.logo:hover {
+    background-color: rgb(231, 230, 230);
+}
+
+.top_bar {
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.top_bar_item {
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+.top_bar_item:hover {
+    background-color: aliceblue;
+    cursor: pointer;
+}
+
+input[type="text"] {
+    width: 400px;
+    padding: 5px;
+    padding-left: 30px;
+}
+
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon_search {
+    position: relative;
+    left: -425px;
+}
+
+.login_button {
+    border: solid 1px blue;
+    margin: 0px 5px;
+    padding: 5px;
+    border-radius: 3px;
+    color: blue;
+    cursor: pointer;
+    margin-left: 200px;
+}
+
+.signup_button {
+    border: solid 1px blue;
+    margin: 0px 5px;
+    padding: 5px;
+    border-radius: 3px;
+    color: white;
+    background-color: rgb(106, 152, 237);
+    cursor: pointer;
+}
+
+.item_nav {
+    display: block;
+    margin: 20px 0px;
+}
+
+nav {
+    width: 250px;
+    background-color: white;
+    position: fixed;
+    left: 100px;
+    top: 100px;
+    height: 600px;
+    overflow-y: scroll;
+    z-index: 10;
+    padding: 3px;
+    border-top: black 2px solid;
+}
+
+nav button {
+    width: 100%;
+    border: none;
+    background-color: white;
+    display: flex;
+}
+
+nav i {
+    margin-right: 5px;
+}
+
+.nav_transform1 {
+    width: 30px;
+    border: none;
+    background-image: url(images/close.png);
+    width: 40px;
+    height: 40px;
+    background-size: 100% 100%;
+    padding: 10px;
+}
+
+.nav_transform2 {
+    background-image: url(images/close.png);
+}
+
+nav button:hover {
+    background-color: azure;
+}
+
+footer {
+    position: relative;
+    top: 200px;
+    background-color: black;
+    height: 300px;
+    padding: 10px;
+}
+
+th {
+    text-align: left;
+    font-size: larger;
+    padding-bottom: 20px;
+    color: white;
+}
+
+td {
+    color: gray
+}
+
+th a {
+    color: white;
+    padding: 10px;
+    font-size: smaller;
+}

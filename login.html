@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+
+<body>
+    <header class="header">
+        <div class="button_list">
+            <button class="button_list_item" style="cursor:pointer" id="btn_list"></button>
+        </div>
+        <div class="logo">
+            <a class="logo_inside" href="index.html"></a>
+        </div>
+        <div class="top_bar">
+            <a class="top_bar_item">About</a>
+            <a class="top_bar_item">Products</a>
+            <a class="top_bar_item">For Teams</a>
+        </div>
+        <div class="search">
+            <input type="text" class="icon_input" placeholder="Search...">
+            <div class="icon_search"><i class='bx bx-search-alt-2'></i></div>
+
+            <a class="login_button">Login</a>
+            <a class="signup_button">Sign up</a>
+    </header>
+
+    <nav id="nav" style="display:none">
+        <div class="item_nav">
+            <button href="#" id="home" onClick="reply_click(this.id)"><i class='bx bxs-home-alt-2' ></i>Home</button>
+            <button href="#" id="question" onClick="reply_click(this.id)"><i class='bx bx-question-mark'></i>Question</button>
+            <button href="#" id="tag" onClick="reply_click(this.id)"><i class='bx bxs-purchase-tag-alt'></i>Tag</button>
+        </div>
+
+        <div class="item_nav">
+            <button href="#" id="user" onClick="reply_click(this.id)"><i class='bx bxs-user'></i> Users</button>
+            <button href="#" id="companies" onClick="reply_click(this.id)"><i class='bx bx-briefcase'></i>Companies</button>
+        </div>
+
+        <div class="item_nav">
+            <button href="#" id="collective1" onClick="reply_click(this.id)"><b>Collective</b></button>
+            <button href="#" id="collective2" onClick="reply_click(this.id)"><img src="images/star.png" height="10px" style="margin:3px">Explore clollective</button>
+
+        </div>
+
+        <div class="item_nav">
+            <button href="#" id="lab" onClick="reply_click(this.id)"><b>Labs</b></button>
+            <button href="#" id="diss" onClick="reply_click(this.id)"><i class='bx bxs-chat'></i>Disscusion</button>
+        </div>
+
+        <div class="item_nav">
+            <b>Teams</b><br>
+            <p>Stack Overflow for Teams – Start collaborating and sharing organizational knowledge.</p>
+            <img src="images/nav_img.png" width="100px"><br>
+            <br>
+            <form action="">
+                <input type="submit" value="Create a free team" style="width:180px;background-color: orange;padding:10px;border-radius: 5px;align:center;margin-left:20px"><br>
+                <br><br>
+                <a href="#">Why teams?</a>
+            </form>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="login-container">
+            <img src="images/anh/login.PNG" width="100%">
+            <div class="a-container">
+                <a>Log in with Google</a>
+
+                <a style="background-color:rgb(70, 70, 70) ;">Log in with Github</a>
+
+                <a style="background-color:#ff8383">Log in with Facebook</a>
+            </div>
+            <h2>Login</h2>
+            <form class="login-form">
+                <label for="">Username</label>
+                <input type="text" placeholder="Username">
+                <label>Password</label> <input type="text" placeholder="Password">
+                <button>Login</button>
+            </form>
+            <p>Don’t have an account?
+                <a href="signup.html" style="color: blue;">Sign up</a>
+            </p>
+            <p>Are you an employer? <a href="signup.html" style="color: blue;">Sign up on Talent</a></p>
+        </div>
+    </div>
+
+    <script>
+        var show_nav = 0,
+            last_button = "home";
+        document.getElementById('btn_list').addEventListener('click', button_list_pressed);
+
+        function button_list_pressed() {
+            if (show_nav == 0) {
+                show_nav = 1;
+                document.getElementById('nav').style.display = "block";
+
+                document.getElementById('btn_list').className = "nav_transform1";
+            } else {
+                show_nav = 0;
+                document.getElementById('nav').style.display = "none";
+                document.getElementById('btn_list').className = 'button_list_item';
+
+            }
+        }
+
+        function reply_click(id) {
+
+            document.getElementById(last_button).style.backgroundColor = "white";
+            document.getElementById(id).style.backgroundColor = "gray";
+            last_button = id
+        };
+    </script>
+
+</html>
